@@ -1,0 +1,40 @@
+<ion-grid no-padding>
+  <ion-row justify-content-center>
+    <ion-col size="auto">
+      <ion-item lines="none">
+        <ion-icon no-margin name="arrow-forward" color="primary" slot="start"></ion-icon>
+        <ion-label class="oya-step-active">
+          Email
+        </ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col size="auto">
+      <ion-item lines="none" disabled>
+        <ion-label class="oya-step-disabled">
+          <span class="oya-step-prefix">2.</span> Get the app
+        </ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col text-center>
+      <div class="oya-header-1">
+        What's your email?
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row >
+    <ion-col size="auto">
+      <ion-item class="oya-input-1" no-padding>
+        <ion-input autofocus color="primary" placeholder="e.g jolly@gmail.com"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row justify-content-center padding-vertical>
+    <ion-col size="auto" padding-vertical>
+      <ion-item lines="none">
+        <ion-button class="oya-button-1" color="tertiary" shape="round" [routerLink]="['get-app']">Continue</ion-button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>

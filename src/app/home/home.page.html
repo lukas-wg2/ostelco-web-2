@@ -2,7 +2,7 @@
     <ion-toolbar>
         <ion-buttons slot="end">
             <ion-menu-button class="hidden-sm hidden-sm hidden-md hidden-lg hidden-xl"></ion-menu-button>
-            <ion-button color="primary" class="hidden-xs" *ngFor="let p of pages">{{ p }}</ion-button>
+            <ion-button color="primary" class="hidden-xs" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of pages">{{ p.label }}</ion-button>
         </ion-buttons>
         <ion-title>
             <div style="width: 110px; height: auto;">
@@ -13,11 +13,11 @@
 </ion-header>
 
 <ion-header [hidden]="!showBorder">
-    <ion-button class="oya-button-3 hidden-xs hidden-sm" style="position: absolute; left: 50%; top: 4px; transform: translateX(-50%); z-index: 999;" fill="solid" color="tertiary" shape="round">Signup and get 2GB</ion-button>
+    <ion-button class="oya-button-3 hidden-xs hidden-sm" style="position: absolute; left: 50%; top: 4px; transform: translateX(-50%); z-index: 999;" fill="solid" color="tertiary" shape="round" [routerDirection]="'root'" [routerLink]="['/signup']">Signup and get 2GB</ion-button>
     <ion-toolbar>
         <ion-buttons slot="end">
             <ion-menu-button class="hidden-sm hidden-sm hidden-md hidden-lg hidden-xl"></ion-menu-button>
-            <ion-button color="primary" class="hidden-xs" *ngFor="let p of pages">{{ p }}</ion-button>
+            <ion-button color="primary" class="hidden-xs" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of pages">{{ p.label }}</ion-button>
         </ion-buttons>
 
         <ion-title>
@@ -48,7 +48,7 @@
                 </ion-row>
                 <ion-row>
                     <ion-col padding-vertical>
-                        <ion-button class="oya-button-1" color="tertiary" shape="round">Signup and get 2GB</ion-button>
+                        <ion-button class="oya-button-1" color="tertiary" shape="round" [routerDirection]="'root'" [routerLink]="['/signup']">Signup and get 2GB</ion-button>
                     </ion-col>
                 </ion-row>
             </ion-col>

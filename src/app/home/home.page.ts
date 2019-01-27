@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   pages = [
-      'Prices',
-      'About',
-      'Help',
-      'Login'
+      { label: 'Prices', url: '/list' },
+      { label: 'About', url: '/list' },
+      { label: 'Help', url: '/home' },
+      { label: 'Login', url: '/home' },
   ];
 
   showBorder = false;

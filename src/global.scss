@@ -11,3 +11,15 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 @import './app/show-hide-screen-size';
+
+// TODO: Should be in separate .scss with name reflecting what element is being customized eg ion-input
+:root {
+  ion-input {
+    --placeholder-color: var(--ion-color-grey);
+  }
+}
+
+// TODO: should override ios padding and set it to the same value as android padding
+ion-title {
+  padding-left: 22px;
+}

@@ -1,7 +1,7 @@
 <ion-header no-border [hidden]="showBorder">
     <ion-toolbar>
         <ion-buttons slot="end">
-            <ion-menu-button class="hidden-sm hidden-sm hidden-md hidden-lg hidden-xl"></ion-menu-button>
+            <ion-menu-button color="primary" class="hidden-sm hidden-sm hidden-md hidden-lg hidden-xl"></ion-menu-button>
             <ion-button color="primary" class="hidden-xs" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of pages">{{ p.label }}</ion-button>
         </ion-buttons>
         <ion-title>

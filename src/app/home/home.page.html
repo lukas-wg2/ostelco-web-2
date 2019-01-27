@@ -1,0 +1,231 @@
+<ion-header no-border [hidden]="showBorder">
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-menu-button class="hidden-sm hidden-sm hidden-md hidden-lg hidden-xl"></ion-menu-button>
+            <ion-button color="primary" class="hidden-xs" *ngFor="let p of pages">{{ p }}</ion-button>
+        </ion-buttons>
+        <ion-title>
+            <div style="width: 110px; height: auto;">
+                <ion-img src="assets/oyaHorizontalBlack@3x.png"></ion-img>
+            </div>
+
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header [hidden]="!showBorder">
+    <ion-button class="oya-button-3 hidden-xs" style="position: absolute; left: 50%; top: 4px; transform: translateX(-50%); z-index: 999;" fill="solid" color="tertiary" shape="round">Signup and get 2GB</ion-button>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-menu-button class="hidden-sm hidden-sm hidden-md hidden-lg hidden-xl"></ion-menu-button>
+            <ion-button color="primary" class="hidden-xs" *ngFor="let p of pages">{{ p }}</ion-button>
+        </ion-buttons>
+
+        <ion-title>
+            <div style="width: 110px; height: auto;">
+                <ion-img src="assets/oyaHorizontalBlack@3x.png"></ion-img>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScroll)="onScrollHandler($event)">
+    <ion-grid no-padding class="oya-content">
+        <ion-row align-items-center>
+            <ion-col no-padding text-center>
+                <ion-row>
+                    <ion-col no-padding>
+                        <div class="oya-header-1">
+                            Data when
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col no-padding>
+                        <div class="oya-header-2">
+                            you need it
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col padding-vertical>
+                        <ion-button class="oya-button-1" color="tertiary" shape="round">Signup and get 2GB</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+        <ion-row align-items-center>
+            <ion-col no-padding text-center>
+                <ion-row>
+                    <ion-col padding-vertical>
+                        <div class="oya-header-3">
+                            What is OYA?
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col padding-vertical size="10" push="1" size-sm="6" push-sm="3">
+                        <div class="oya-text-1">
+                            Oya gives you extra data on the latest iPhone XS/Max, without changing phone company. No SMS, no calling - simply data.
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col padding-vertical>
+                        Image
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+        <ion-row align-items-center>
+            <ion-col no-padding text-center>
+                <ion-row>
+                    <ion-col padding-vertical padding-horizontal>
+                        <div class="oya-header-4">
+                            Another benefit
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col padding-vertical size="10" push="1" size-sm="6" push-sm="3">
+                        <div class="oya-text-2">
+                            We've stripped away the hassle with traditional phone plans and made a really simple app - you don't even need a SIM card - it's magic!
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col padding-vertical>
+                        Image
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid class="oya-footer" no-padding>
+        <ion-row align-items-center>
+            <ion-col no-padding size="12">
+                <ion-row>
+                    <ion-col size="12" size-sm text-center text-sm-end>
+                        <ion-button class="oya-button-2" color="warning" shape="round">For iPhone</ion-button>
+                    </ion-col>
+                    <ion-col size="12" size-sm text-center text-sm-start>
+                        <ion-button class="oya-button-2" color="tertiary" shape="round">For Android</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col no-padding size="10" push="1">
+                <ion-row>
+                    <ion-col padding-vertical>
+                        <div style="width: 110px; height: auto">
+                            <ion-img src="assets/oyaHorizontalWhite@3x.png"></ion-img>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col padding-vertical size="12" size-sm="5">
+                        <div class="oya-text-3" text-capitalize>
+                            oya gives you extra data on the latest iPhone XS/Max, without changing phone company. No SMS, no calling - simply data. We've stripped away the hassles with traditional phone plans and made a really simple app.
+                        </div>
+                    </ion-col>
+                    <ion-col padding-vertical size="6" size-sm="3" push-sm="2">
+                        <ion-row>
+                            <ion-col size="12" no-padding>
+                                <div class="oya-text-4" text-capitalize>
+                                    blog
+                                </div>
+                            </ion-col>
+                            <ion-col size="12" no-padding>
+                                <div class="oya-text-4" text-capitalize>
+                                    instagram
+                                </div>
+                            </ion-col>
+                            <ion-col size="12" no-padding>
+                                <div class="oya-text-4" text-capitalize>
+                                    facebook
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col padding-vertical size="6" size-sm="3" push-sm="2">
+                        <ion-row>
+                            <ion-col size="12" no-padding>
+                                <div class="oya-text-4" text-capitalize>
+                                    community
+                                </div>
+                            </ion-col>
+                            <ion-col size="12" no-padding>
+                                <div class="oya-text-4" text-capitalize>
+                                    career
+                                </div>
+                            </ion-col>
+                            <ion-col size="12" no-padding>
+                                <div class="oya-text-4" text-capitalize>
+                                    link
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col no-padding text-center size="10" push="1" size-sm="8" push-sm="2">
+                <ion-row justify-content-center>
+                    <ion-col size="auto">
+                        <div class="oya-text-5" text-capitalize>
+                            © OYA 2019
+                        </div>
+                    </ion-col>
+                    <ion-col size="auto">
+                        <div class="oya-text-5" text-capitalize>
+                            Privacy Policy
+                        </div>
+                    </ion-col>
+                    <ion-col size="auto">
+                        <div class="oya-text-5" text-capitalize>
+                            Terms &amp; Conditions
+                        </div>
+                    </ion-col>
+                    <ion-col size="auto">
+                        <div class="oya-text-5" text-capitalize>
+                            GDPR
+                        </div>
+                    </ion-col>
+                    <ion-col size="auto">
+                        <div class="oya-text-5" text-capitalize>
+                            Cookies
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <!--
+    <ion-grid>
+        <ion-row>
+            <ion-col>Full Padding</ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid no-padding>
+        <ion-row>
+            <ion-col>No padding on grid</ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row no-padding>
+            <ion-col>No padding on row</ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col no-padding>No padding on col</ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid no-padding>
+        <ion-row>
+            <ion-col no-padding>No padding on grid and col</ion-col>
+        </ion-row>
+    </ion-grid>
+    -->
+
+</ion-content>
